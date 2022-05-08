@@ -98,13 +98,13 @@ condition2 = st.sidebar.slider('あなたの今の調子は？2', 0, 100, 10)
 'コンディション2：', condition2
 
 st.markdown('### 2カラムレイアウトにする')
-left_column, right_column = st.beta_columns(2)
+left_column, right_column = st.columns(2)
 button = left_column.button('右カラムにボタンを表示')
 if button:
     right_column.write('ここは右カラムです。')
 
 st.markdown('### expanderの追加（アコーディオン）')
-expander = st.beta_expander('問い合わせ')
+expander = st.expander('問い合わせ')
 expander.write('問い合わせ内容を書く')
 expander.write('問い合わせ内容を書く')
 expander.write('問い合わせ内容を書く')
